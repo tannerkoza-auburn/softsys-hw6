@@ -1,0 +1,8 @@
+prefix=/home/tannerkoza/SFSAS/HW5/hw_ws/install
+
+Name: imu_sub
+Description: Description of imu_sub
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

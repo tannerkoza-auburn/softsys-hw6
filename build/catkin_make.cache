@@ -1,0 +1,2 @@
+imu_pub:imu_sub
+-DCATKIN_DEVEL_PREFIX=/home/tannerkoza/SFSAS/HW5/hw_ws/devel -DCMAKE_INSTALL_PREFIX=/home/tannerkoza/SFSAS/HW5/hw_ws/install -G Unix Makefiles
