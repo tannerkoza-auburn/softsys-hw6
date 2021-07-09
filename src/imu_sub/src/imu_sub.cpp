@@ -1,7 +1,7 @@
 #include "imu_sub/imu_sub.h"
 #include "imu_sub/imu.h"
 
-ImuFilt::ImuFilt() : imu(q, dT)
+ImuFilt::ImuFilt(double dT_) : imu(q, dT_)
 {
     sub = n.subscribe("imu_pub/imu", 1, &ImuFilt::qCall, this);
     pub = n.advertise<sensor_msgs::Imu>("imu_sub/imu", 1);

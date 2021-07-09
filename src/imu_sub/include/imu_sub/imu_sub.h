@@ -12,9 +12,9 @@ class ImuFilt
 
 public:
     double q[4] = {1.0, 0.0, 0.0, 0.0};
-    double dT = 0.01;
+    double dT;
 
-    ImuFilt(); // constructor
+    ImuFilt(double); // constructor
 
 private:
     IMU imu;
