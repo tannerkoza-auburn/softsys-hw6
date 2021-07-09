@@ -23,8 +23,6 @@ void ImuFilt::qCall(const sensor_msgs::Imu::ConstPtr &msg)
 
     imu.update(q, gyro);
 
-    std::cout << q[0] << std::endl;
-
     publishQ();
 }
 
